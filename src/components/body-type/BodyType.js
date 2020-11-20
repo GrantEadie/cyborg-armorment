@@ -20,7 +20,8 @@ function BodyType(props){
         whenPartClicked = {props.onPartSelection}
         partName={part.partName}
         partDescription={part.partDescription} 
-        partQuantity={part.partQuantity}             
+        partQuantity={part.partQuantity}  
+        partPrice={part.partPrice}           
         id={part.id}
         key={part.id}/>
         </li>

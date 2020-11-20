@@ -36,11 +36,12 @@ class BodyTypeControl extends React.Component {
       },
       {
         bodyType: "Neurotech and Comp Enhancements",
-        selection: [{ partName: "Terran Rayzen XI: Quantum X ", partDescription: "2kghz 10 Core, Quantum Chip", partQuantity: 4, id:9408, cartTotal: 1, partPrice }]
+        selection: [{ partName: "Terran Rayzen XI: Quantum X ", partDescription: "2kghz 10 Core, Quantum Chip", partQuantity: 4, id:9408, cartTotal: 1, partPrice: 30900}]
       },
       {
-        bodyType: "Internal compartments",
-        selection: [{ partName: "6B Cargo Hold", partDescription: "Hold your shiiit", partQuantity: 5, id:9308, cartTotal: 1  }]
+        bodyType: "External Instruments",
+        selection: [{ partName: "Anarres Transport Scan Module", partDescription: "Detects transport traces up to 700 parsecs", partQuantity: 5, id:9308, cartTotal: 1, partPrice: 679  },
+        {partName: "Orian Phase Transmitter", partDescription: "Creates phase discharge at a radius of seven kilometers.", partQuantity: 5, id:9308, cartTotal: 1, partPrice: 179  }]
       }]
     };
   }
