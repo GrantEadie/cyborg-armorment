@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Cardo', serif;
   background-color:#212121;
   color:white;
 }
@@ -35,12 +35,12 @@ hr {
   border-right: solid 1px #a9a9a9;
 }
 
-h1 {
-  font-size:75px;
+.header{
+  text-align:center;
 }
 
-#littlePlanet{
-  width:60px;
+.header h1{
+  font-family: 'Montserrat Subrayada', sans-serif;
+  font-size:50px;
 
-  fill:white;
 }

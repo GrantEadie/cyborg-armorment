@@ -5,9 +5,9 @@ function Header() {
   return (    
     <React.Fragment>
       <br/><br/>
-      <div className="container">
+      <div className="header container">
       <h1>endymion outfitters</h1>
-      <p>synthetic armament and bio-modification</p>
+      <h4>synthetic armament and bio-modification</h4>
       </div>
     </React.Fragment>
   );
