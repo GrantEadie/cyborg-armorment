@@ -25,7 +25,7 @@ hr {
 .detailClick{
   border: solid 1px transparent;
   margin-top: 5px;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .detailClick:hover{
@@ -53,4 +53,17 @@ p {
 
 h2 {
   color:#5bc0de;
+}
+
+.detailBar{
+  display:inline;
+  padding-right:30px;
+}
+
+#stock{
+  color:#a9a9a9;
+}
+
+.buy {
+  margin-left:280px;
 }

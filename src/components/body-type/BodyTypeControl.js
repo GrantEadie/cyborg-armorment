@@ -237,6 +237,7 @@ class BodyTypeControl extends React.Component {
         <button className="arrow btn btn-outline-info btn-block" onClick={this.handleClickForm}>{buttonText}</button>
           </div>
           <div className="col-md-6">
+          <CartList onDeleteCartPart={this.handleDeleteCartPart} cartList={this.state.masterCartList}/>
             
           </div>
         </div>
@@ -244,7 +245,6 @@ class BodyTypeControl extends React.Component {
         <div className="col-md-6">
           </div>
           <div className="col-md-6">
-          <CartList onDeleteCartPart={this.handleDeleteCartPart} cartList={this.state.masterCartList}/>
           </div>
         </div>
       </div>

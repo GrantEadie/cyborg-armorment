@@ -15,6 +15,7 @@ function CartList(props) {
           partBodyType={part.partBodyType}
           partDescription={part.partDescription}
           partQuantity={part.partQuantity}
+          partPrice={part.partPrice}
           cartTotal={part.cartTotal}
           key={index} 
           id={part.id}

@@ -7,12 +7,12 @@ function Part(props){
       <div className="detailClick" onClick = {() => props.whenPartClicked(props.id)}>
         <p className="itemTitle">{props.partName}</p>
         <p>{props.partDescription}</p>
-          <div className="detailBar">
-            <p>{props.partPrice} ⅊ </p>
-            <p>{props.partQuantity} <span id="stock">in stock</span></p>
+          <div >
+            <p className="detailBar">{props.partPrice} ⅊ </p>
+            <p className="detailBar">{props.partQuantity} <span id="stock">in stock</span></p>
           </div>
         </div>
-        <button className="btn btn-outline-light btn-sm" onClick = {() => props.onBuyPart(props.id)}>Buy</button>
+        <button className=" btn btn-outline-light btn-sm buy" onClick = {() => props.onBuyPart(props.id)}>Buy</button>
         <hr/>
 
     </React.Fragment>
