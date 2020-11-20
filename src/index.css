@@ -38,3 +38,9 @@ hr {
 h1 {
   font-size:75px;
 }
+
+#littlePlanet{
+  width:60px;
+
+  fill:white;
+}
