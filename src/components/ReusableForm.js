@@ -28,7 +28,7 @@ function NewPartForm(props) {
           <option value="1">Torso and Center Mass</option>
           <option value="2">Arms or Upper Appendages</option>
           <option value="3">Legs or Lower Appendages</option>
-          <option value="4">Computational Enhancements</option>
+          <option value="4">Neurotech and Comp Enhancements</option>
           <option value="5">External Gadgets</option>
         </select><br/>
 

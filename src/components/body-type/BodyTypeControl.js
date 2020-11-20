@@ -18,25 +18,25 @@ class BodyTypeControl extends React.Component {
       {
         bodyType: "Vision & Auditory",
         selection: [
-          { partName: "Heat Sensing Visual Sensor", partDescription: "Thrusters are what propels a ship when flying in normal space.", partQuantity: 1, id: 9807, cartTotal: 1 },
-          { partName: "Warp Converter", partDescription: "A spacecraft equipped with a warp drive may travel at speeds greater than that of light by many orders of magnitude.", partQuantity: 4, id:9808, cartTotal: 1  }
+          { partName: "Heat Sensing Visual Conversion", partDescription: "See heat as a ratio of the electromagnet spectrum. Adjusts for many species.", partQuantity: 1, id: 9807, cartTotal: 1, partPrice: 499 },
+          { partName: "Gravity Pulse Auditory Sensors", partDescription: "Detects gravity particles in shield plating and converts to readable sound waves.", partQuantity: 4, id:9808, cartTotal: 1, partPrice: 377  }
         ]
       },
       {
-        bodyType: "Hardpoints",
-        selection: [{ partName: "Pulse Laser", partDescription: "Blasters!", partQuantity: 3, id:9708, cartTotal: 1  }]
+        bodyType: "Torso and Center Mass",
+        selection: [{ partName: "Cybernetic Core", partDescription: "Outputs 7 million gigwatts, powered by anti-matter fragments ", partQuantity: 3, id:9708, cartTotal: 1, partPrice: 46000  }]
       },
       {
-        bodyType: "Ship Armor",
-        selection: [{ partName: "Titanium Plate", partDescription: "Ship Armor", partQuantity: 4, id:9608, cartTotal: 1  }]
+        bodyType: "Arms or Upper Appendages",
+        selection: [{ partName: "Science-Grade Nanotech Prosthetic", partDescription: "Capable of taking any form or shape using neurotransmitted data. Virtually industructable", partQuantity: 4, id:9608, cartTotal: 1, partPrice: 1800 }]
       },
       {
-        bodyType: "Utility Mounts",
-        selection: [{ partName: "Detailed Surface Scanner", partDescription: "Scans Planets", partQuantity: 5, id:9508, cartTotal: 1  }]
+        bodyType: "Legs or Lower Appendages",
+        selection: [{ partName: "Weapons-Grade Nanotech Prosthetic", partDescription: "Warning: this nanotech is not in accord with the Radchaii Treaty of Hyperion. Use ONLY in free-space", partQuantity: 5, id:9508, cartTotal: 1, partPrice: 9200  }]
       },
       {
-        bodyType: "Shield Generators",
-        selection: [{ partName: "4E Shield Generator", partDescription: "Protect your shiiit", partQuantity: 4, id:9408, cartTotal: 1  }]
+        bodyType: "Neurotech and Comp Enhancements",
+        selection: [{ partName: "Terran Rayzen XI: Quantum X ", partDescription: "2kghz 10 Core, Quantum Chip", partQuantity: 4, id:9408, cartTotal: 1, partPrice }]
       },
       {
         bodyType: "Internal compartments",
