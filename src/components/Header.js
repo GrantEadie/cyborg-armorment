@@ -6,7 +6,8 @@ function Header() {
     <React.Fragment>
       <br/><br/>
       <div className="container">
-      <h1>Taj Baktor's Cyborg Armaments</h1>
+      <h1>endymion outfitters</h1>
+      <p>synthetic armament and bio-modification</p>
       </div>
     </React.Fragment>
   );
