@@ -10,7 +10,7 @@ function BodyType(props){
 
   return(
     <React.Fragment>
-      <h3>{props.bodyType}</h3>
+      <h2>{props.bodyType}</h2>
       <p><em>available parts</em></p>
       <hr/>
       <ul style={ulStyle}>

@@ -9,16 +9,16 @@ class BodyTypeControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterCartList: [{ partName: "Pulse Laser", partDescription: "Blasters!", partQuantity: 3, id:9708, cartTotal: 1 }],
+      masterCartList: [],
       formVisibleOnPage: false,
       selectedPart: null,
       bodyTypeVisibleOnPage: 0,
       editing: false,
       masterPartList: [
       {
-        bodyType: "Engine Parts",
+        bodyType: "Vision & Auditory",
         selection: [
-          { partName: "3A Thrusters", partDescription: "Thrusters are what propels a ship when flying in normal space.", partQuantity: 1, id: 9807, cartTotal: 1 },
+          { partName: "Heat Sensing Visual Sensor", partDescription: "Thrusters are what propels a ship when flying in normal space.", partQuantity: 1, id: 9807, cartTotal: 1 },
           { partName: "Warp Converter", partDescription: "A spacecraft equipped with a warp drive may travel at speeds greater than that of light by many orders of magnitude.", partQuantity: 4, id:9808, cartTotal: 1  }
         ]
       },

@@ -7,7 +7,7 @@ function PartDetail(props){
   return (
     <React.Fragment>
       <h1>Part Detail</h1>
-      <h3>Name: {part.partName}</h3>
+      <h2>Name: {part.partName}</h2>
       <p>Description: {part.partDescription}</p>
       <h4>Quantity: {part.partQuantity}</h4>
       <button className="btn btn-outline-danger btn-block" onClick={() => onClickingDelete(part.id) }>Delete This Part</button>
