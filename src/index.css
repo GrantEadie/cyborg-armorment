@@ -1,6 +1,6 @@
 body {
-  font-family: 'Trispace', sans-serif; 
-  background-color:black;
+  font-family: 'Goldman', cursive;
+  background-color:#343434;
   color:white;
 }
 
@@ -15,14 +15,22 @@ ul {
 }
 
 hr {
-  border-top:1px solid white;
+  border-top:1px solid #a9a9a9;
 }
 
 .itemTitle{
   font-size:20px;
 }
 
+.detailClick{
+  border: solid 1px transparent;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 .detailClick:hover{
   cursor:pointer;
-  background-color:rgba(71, 71, 71, 0.933);
+  /* background-color:rgba(71, 71, 71, 0.933); */
+  border-bottom: solid 1px #a9a9a9;
+  border-right: solid 1px #a9a9a9;
 }
