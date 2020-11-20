@@ -6,10 +6,12 @@ function PartDetail(props){
   
   return (
     <React.Fragment>
-      <h1>Part Detail</h1>
-      <h2>Name: {part.partName}</h2>
-      <p>Description: {part.partDescription}</p>
-      <h4>Quantity: {part.partQuantity}</h4>
+      <h2>{part.partName}</h2><hr/>
+      <p>{part.partDescription}</p>
+        <div >
+            <p className="detailBar">{props.partPrice} ⅊ </p>
+            <p className="detailBar">{props.partQuantity} <span id="stock">in stock</span></p>
+          </div>
       <button className="btn btn-outline-danger btn-block" onClick={() => onClickingDelete(part.id) }>Delete This Part</button>
       <button className="btn btn-outline-light btn-block" onClick={ props.onClickingEdit }>Edit This Part</button>
 
