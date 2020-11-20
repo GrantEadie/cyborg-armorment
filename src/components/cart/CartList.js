@@ -7,7 +7,7 @@ function CartList(props) {
 
   return (
     <React.Fragment>
-    <hr />
+    <hr id="fancy" />
     <div className="cartDetails">
       <h2>Your Cart <span className="cartTotal float-right mt-2">{props.cartTotal} ⅊</span></h2>
       

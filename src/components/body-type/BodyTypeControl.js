@@ -114,7 +114,7 @@ class BodyTypeControl extends React.Component {
         if (clone[i].selection[j].id === oldPart.id){
           match = true;
           clone[i].selection[j].partQuantity = clone[i].selection[j].partQuantity + oldPart.cartTotal;
-          newCartTotalPrice -= clone[i].selection[j].partPrice * oldPart.cartTotal;
+          newCartTotalPrice -= oldPart.partPrice * oldPart.cartTotal;
           clone[i].selection[j].cartTotal = 1;
           break;
         }
@@ -248,14 +248,12 @@ class BodyTypeControl extends React.Component {
         <button className="arrow btn btn-outline-info btn-block" onClick={this.handleClickForm}>{buttonText}</button>
           </div>
           <div className="col-md-6">
-          <CartList cartTotal={this.state.cartTotal} onDeleteCartPart={this.handleDeleteCartPart} cartList={this.state.masterCartList}/>
             
           </div>
         </div>
         <div className="row">
-        <div className="col-md-6">
-          </div>
-          <div className="col-md-6">
+        <div className="col-md-12">
+          <CartList cartTotal={this.state.cartTotal} onDeleteCartPart={this.handleDeleteCartPart} cartList={this.state.masterCartList}/>
           </div>
         </div>
       </div>
