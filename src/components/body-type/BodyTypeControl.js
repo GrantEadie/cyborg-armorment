@@ -231,7 +231,9 @@ class BodyTypeControl extends React.Component {
         onPartSelection={this.handleChangingSelectedPart}
         onBuyPart={this.handleBuyClick}
         />
-      buttonText = "Add new Part"
+      buttonText = <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-plus-square-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3v-3z"/>
+    </svg>
     }    
 
     return (
@@ -245,8 +247,8 @@ class BodyTypeControl extends React.Component {
         <button className="arrow btn btn-outline-light btn-sm" onClick={this.handleClickUp}><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
         </svg></button>
+        <button className="mx-auto btn btn-outline-info btn-sm" onClick={this.handleClickForm}>{buttonText}</button>
         {currentVisibleState}
-        <button className="arrow btn btn-outline-info btn-block" onClick={this.handleClickForm}>{buttonText}</button>
           </div>
           <div className="col-md-4">
             <BodyTypeSVG/>

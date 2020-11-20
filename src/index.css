@@ -90,7 +90,7 @@ h2 {
 }
 
 .visionAudio:hover {
-  fill: #5bc0debe;
+  fill: lightyellow;
   transition-duration:0.1s;
   cursor:pointer;
 }
@@ -111,6 +111,10 @@ h2 {
   fill: #5bc0debe;
   transition-duration:0.1s;
   cursor:pointer;
+}
+
+.legs:active{
+  fill:white;
 }
 
 .arms:hover{
