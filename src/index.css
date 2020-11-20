@@ -29,9 +29,14 @@ hr {
 }
 
 .detailClick:hover{
-  transition-duration: .4s;
+  transition-duration: .2s;
   cursor:pointer;
   border-right: solid 2px #5bc0debe;
+}
+
+.detailClick:hover .itemTitle{
+  transition-duration:.2s;
+  color:#5bc0debe;
 }
 
 .header{
@@ -47,7 +52,7 @@ hr {
 }
 
 p {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 h2 {
@@ -61,4 +66,8 @@ h2 {
 
 #stock{
   color:#a9a9a9;
+}
+
+.details{
+  margin-bottom:30px;  
 }
