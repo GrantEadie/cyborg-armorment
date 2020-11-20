@@ -9,8 +9,8 @@ function CartList(props) {
     <React.Fragment>
     <hr />
     <div className="cartDetails">
-      <h2>Your Cart</h2>
-      <p>total: {props.cartTotal}</p>
+      <h2>Your Cart <span className="cartTotal float-right mt-2">{props.cartTotal} ⅊</span></h2>
+      
       </div>
       <hr />
       {props.cartList.map((part, index) =>

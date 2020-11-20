@@ -72,7 +72,7 @@ h2 {
   margin-bottom:30px;  
 }
 
-.cartDetails p{
-  display:inline;
-  float:right;
+.cartDetails .cartTotal{
+  color:white;
+  font-size:20px;
 }
