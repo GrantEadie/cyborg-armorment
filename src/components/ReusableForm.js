@@ -11,7 +11,7 @@ function NewPartForm(props) {
         className="form-control"
           type='text'
           name='partName'
-          placeholder='Product Name' /><br/>
+          placeholder='Part Name' /><br/>
         <input
         className="form-control"
           type='text'
@@ -40,7 +40,7 @@ function NewPartForm(props) {
   );
 }
 
-NewProductForm.propTypes = {
+NewPartForm.propTypes = {
   formSubmissionHandler: PropTypes.func,
   buttonText: PropTypes.string
 };
