@@ -9,6 +9,7 @@ class BodyTypeControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
+      cartTotal: 0,
       masterCartList: [],
       formVisibleOnPage: false,
       selectedPart: null,
@@ -50,6 +51,7 @@ class BodyTypeControl extends React.Component {
     const currentCatIndex = this.state.bodyTypeVisibleOnPage;
     const clone = [...this.state.masterPartList]
     const cartClone = [...this.state.masterCartList]
+    let partPrice = 0;
     for (let i = 0; i <= clone[currentCatIndex].selection.length; i++){
       if (clone[currentCatIndex].selection[i].id === id){
 
@@ -67,11 +69,13 @@ class BodyTypeControl extends React.Component {
           if (e.id === currentPart.id) {
             match = true
             e.cartTotal += 1;
+            partPrice = currentPart.partPrice;
             break;
           } 
         };
         if (!match) {
           cartClone.push(currentPart)
+          partPrice = currentPart.partPrice;
         }
         
         break;        
@@ -82,7 +86,8 @@ class BodyTypeControl extends React.Component {
       selectedPart: null,
       formVisibleOnPage:false,
       masterPartList: clone,
-      masterCartList: cartClone
+      masterCartList: cartClone,
+      cartTotal: this.state.cartTotal + partPrice
     });
   }
 
@@ -239,7 +244,7 @@ class BodyTypeControl extends React.Component {
         <button className="arrow btn btn-outline-info btn-block" onClick={this.handleClickForm}>{buttonText}</button>
           </div>
           <div className="col-md-6">
-          <CartList onDeleteCartPart={this.handleDeleteCartPart} cartList={this.state.masterCartList}/>
+          <CartList cartTotal={this.state.cartTotal} onDeleteCartPart={this.handleDeleteCartPart} cartList={this.state.masterCartList}/>
             
           </div>
         </div>
