@@ -4,6 +4,7 @@ import NewPartForm from '../part/NewPartForm.js'
 import PartDetail from '../part/PartDetail'
 import EditPartForm from '../part/EditPartForm';
 import CartList from '../cart/CartList';
+import BodyTypeSVG from './BodyTypeSVG';
 
 class BodyTypeControl extends React.Component {
   constructor(props) {
@@ -237,7 +238,7 @@ class BodyTypeControl extends React.Component {
       <React.Fragment>
         <div className="container">
         <div className="row">          
-          <div className="col-md-6">
+          <div className="col-md-8">
           <button className="arrow btn btn-outline-light btn-sm" onClick={this.handleClickDown}><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
           <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
         </svg></button>
@@ -247,8 +248,8 @@ class BodyTypeControl extends React.Component {
         {currentVisibleState}
         <button className="arrow btn btn-outline-info btn-block" onClick={this.handleClickForm}>{buttonText}</button>
           </div>
-          <div className="col-md-6">
-            
+          <div className="col-md-4">
+            <BodyTypeSVG/>
           </div>
         </div>
         <div className="row">

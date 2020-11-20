@@ -81,3 +81,46 @@ h2 {
   border-top:1px solid white;
   margin-bottom:30px;
 }
+
+#humanBody {
+  fill:#767676;
+  width:75%;
+  float:right;
+  margin-right:50px;
+}
+
+.visionAudio:hover {
+  fill: #5bc0debe;
+  transition-duration:0.1s;
+  cursor:pointer;
+}
+
+.torso:hover {
+  fill: #5bc0debe;
+  transition-duration:0.1s;
+  cursor:pointer;
+}
+
+.hands:hover {
+  fill: #5bc0debe;
+  transition-duration:0.1s;
+  cursor:pointer;
+}
+
+.legs:hover{
+  fill: #5bc0debe;
+  transition-duration:0.1s;
+  cursor:pointer;
+}
+
+.arms:hover{
+  fill: #5bc0debe;
+  transition-duration:0.1s;
+  cursor:pointer;
+}
+
+.head:hover {
+  fill: #5bc0debe;
+  transition-duration:0.1s;
+  cursor:pointer;
+}
