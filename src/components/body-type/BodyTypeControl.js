@@ -107,19 +107,22 @@ class BodyTypeControl extends React.Component {
 
   handleDeleteCartPart = (oldPart) => {
     const clone = [...this.state.masterPartList];
+    let newCartTotalPrice = this.state.cartTotal;
     for (let i = 0; i < clone.length; i++){
       let match = false;
       for (let j = 0; j < clone[i].selection.length; j++){
         if (clone[i].selection[j].id === oldPart.id){
           match = true;
           clone[i].selection[j].partQuantity = clone[i].selection[j].partQuantity + oldPart.cartTotal;
+          newCartTotalPrice -= clone[i].selection[j].partPrice * oldPart.cartTotal;
+          clone[i].selection[j].cartTotal = 1;
           break;
         }
       }
         if (!match && oldPart.partBodyType === clone[i].bodyType) {
-          console.log("enters if statement");
           const cloneOldPart = {...oldPart};
           cloneOldPart.partQuantity = oldPart.cartTotal;
+          newCartTotalPrice -= oldPart.partPrice * oldPart.cartTotal;
           cloneOldPart.cartTotal = 1;
           clone[i].selection.push(cloneOldPart)
           break;
@@ -130,7 +133,8 @@ class BodyTypeControl extends React.Component {
 
     this.setState({
       masterPartList: clone,
-      masterCartList: newSelection
+      masterCartList: newSelection,
+      cartTotal: newCartTotalPrice
     })
   }
 

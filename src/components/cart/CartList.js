@@ -35,6 +35,4 @@ CartList.propTypes = {
   cartTotal: PropTypes.number
 }
 
-
-
 export default CartList;
