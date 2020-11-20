@@ -9,7 +9,7 @@ class BodyTypeControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      masterCartList: [{ prodName: "Pulse Laser", prodDescription: "Blasters!", prodQuantity: 3, id:9708, cartTotal: 1 }],
+      masterCartList: [{ partName: "Pulse Laser", partDescription: "Blasters!", partQuantity: 3, id:9708, cartTotal: 1 }],
       formVisibleOnPage: false,
       selectedPart: null,
       bodyTypeVisibleOnPage: 0,
@@ -18,29 +18,29 @@ class BodyTypeControl extends React.Component {
       {
         bodyType: "Engine Parts",
         selection: [
-          { prodName: "3A Thrusters", prodDescription: "Thrusters are what propels a ship when flying in normal space.", prodQuantity: 1, id: 9807, cartTotal: 1 },
-          { prodName: "Warp Converter", prodDescription: "A spacecraft equipped with a warp drive may travel at speeds greater than that of light by many orders of magnitude.", prodQuantity: 4, id:9808, cartTotal: 1  }
+          { partName: "3A Thrusters", partDescription: "Thrusters are what propels a ship when flying in normal space.", partQuantity: 1, id: 9807, cartTotal: 1 },
+          { partName: "Warp Converter", partDescription: "A spacecraft equipped with a warp drive may travel at speeds greater than that of light by many orders of magnitude.", partQuantity: 4, id:9808, cartTotal: 1  }
         ]
       },
       {
         bodyType: "Hardpoints",
-        selection: [{ prodName: "Pulse Laser", prodDescription: "Blasters!", prodQuantity: 3, id:9708, cartTotal: 1  }]
+        selection: [{ partName: "Pulse Laser", partDescription: "Blasters!", partQuantity: 3, id:9708, cartTotal: 1  }]
       },
       {
         bodyType: "Ship Armor",
-        selection: [{ prodName: "Titanium Plate", prodDescription: "Ship Armor", prodQuantity: 4, id:9608, cartTotal: 1  }]
+        selection: [{ partName: "Titanium Plate", partDescription: "Ship Armor", partQuantity: 4, id:9608, cartTotal: 1  }]
       },
       {
         bodyType: "Utility Mounts",
-        selection: [{ prodName: "Detailed Surface Scanner", prodDescription: "Scans Planets", prodQuantity: 5, id:9508, cartTotal: 1  }]
+        selection: [{ partName: "Detailed Surface Scanner", partDescription: "Scans Planets", partQuantity: 5, id:9508, cartTotal: 1  }]
       },
       {
         bodyType: "Shield Generators",
-        selection: [{ prodName: "4E Shield Generator", prodDescription: "Protect your shiiit", prodQuantity: 4, id:9408, cartTotal: 1  }]
+        selection: [{ partName: "4E Shield Generator", partDescription: "Protect your shiiit", partQuantity: 4, id:9408, cartTotal: 1  }]
       },
       {
         bodyType: "Internal compartments",
-        selection: [{ prodName: "6B Cargo Hold", prodDescription: "Hold your shiiit", prodQuantity: 5, id:9308, cartTotal: 1  }]
+        selection: [{ partName: "6B Cargo Hold", partDescription: "Hold your shiiit", partQuantity: 5, id:9308, cartTotal: 1  }]
       }]
     };
   }
@@ -53,8 +53,8 @@ class BodyTypeControl extends React.Component {
       if (clone[currentCatIndex].selection[i].id === id){
 
         const currentPart = clone[currentCatIndex].selection[i];
-        if (clone[currentCatIndex].selection[i].prodQuantity > 1) {
-          clone[currentCatIndex].selection[i].prodQuantity = clone[currentCatIndex].selection[i].prodQuantity -1;
+        if (clone[currentCatIndex].selection[i].partQuantity > 1) {
+          clone[currentCatIndex].selection[i].partQuantity = clone[currentCatIndex].selection[i].partQuantity -1;
 
         } else {
           clone[currentCatIndex].selection = this.state.masterPartList[currentCatIndex].selection.filter(pro => pro.id !== id);
@@ -106,13 +106,13 @@ class BodyTypeControl extends React.Component {
       for (let j = 0; j < clone[i].selection.length; j++){
         if (clone[i].selection[j].id === oldPart.id){
           match = true;
-          clone[i].selection[j].prodQuantity = clone[i].selection[j].prodQuantity + oldPart.cartTotal;
+          clone[i].selection[j].partQuantity = clone[i].selection[j].partQuantity + oldPart.cartTotal;
           break;
         }
       }
         if (!match) {
           const cloneOldPart = {...oldPart};
-          cloneOldPart.prodQuantity = oldPart.cartTotal
+          cloneOldPart.partQuantity = oldPart.cartTotal
           clone[i].selection.push(cloneOldPart)
           break;
         }
@@ -186,8 +186,8 @@ class BodyTypeControl extends React.Component {
 
   handleAddingNewPartToList = (newPart) => {
     const clone = [...this.state.masterPartList]
-    const newSelection = clone[newPart.prodBodyType].selection.concat(newPart);    
-    clone[newPart.prodBodyType].selection = newSelection;
+    const newSelection = clone[newPart.partBodyType].selection.concat(newPart);    
+    clone[newPart.partBodyType].selection = newSelection;
     this.setState({
       masterPartList: clone,
       formVisibleOnPage: false
@@ -200,17 +200,17 @@ class BodyTypeControl extends React.Component {
 
     if (this.state.editing){
       currentVisibleState = <EditPartForm part = {this.state.selectedPart} onEditPart = {this.handleEditingPartInList} />
-      buttonText = "Return to Outfitter";
+      buttonText = "Return to Armaments";
     } else if (this.state.selectedPart != null) {
       currentVisibleState = <PartDetail 
       part = {this.state.selectedPart} 
       onClickingDelete = {this.handleDeletingPart}
       onClickingEdit = {this.handleEditClick} />
-      buttonText = "Return to Outfitting";
+      buttonText = "Return to Armaments";
     }
     else if (this.state.formVisibleOnPage) {
       currentVisibleState = <NewPartForm onNewPartCreation={this.handleAddingNewPartToList} />;
-      buttonText = "Return to Outfitting"
+      buttonText = "Return to Armaments"
     } else {
       currentVisibleState = <BodyTypeList
         currentIndex={this.state.bodyTypeVisibleOnPage} 
@@ -218,7 +218,7 @@ class BodyTypeControl extends React.Component {
         onPartSelection={this.handleChangingSelectedPart}
         onBuyPart={this.handleBuyClick}
         />
-      buttonText = "Add new Space Part"
+      buttonText = "Add new Part"
     }    
 
     return (
