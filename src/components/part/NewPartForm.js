@@ -5,16 +5,16 @@ import ReusableForm from "../ReusableForm";
 
 function NewPartForm(props) {
 
-  function handleNewPartFormSubmission(event){
+  function handleNewPartFormSubmission(event) {
     event.preventDefault();
-   props.onNewPartCreation({partName: event.target.partName.value, partDescription: event.target.partDescription.value, partBodyType: event.target.partBodyType.value, partQuantity: event.target.partQuantity.value, id: v4(), cartTotal: 0 })
-  }  
-  
+    props.onNewPartCreation({ partName: event.target.partName.value, partDescription: event.target.partDescription.value, partBodyType: event.target.partBodyType.value, partQuantity: event.target.partQuantity.value, id: v4(), cartTotal: 0 })
+  }
+
   return (
     <React.Fragment>
       <ReusableForm
-      formSubmissionHandler={handleNewPartFormSubmission}
-      buttonText="Add Part"/>
+        formSubmissionHandler={handleNewPartFormSubmission}
+        buttonText="Add Part" />
     </React.Fragment>
   );
 }
