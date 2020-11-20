@@ -12,8 +12,9 @@ function Part(props){
             <p className="detailBar">{props.partQuantity} <span id="stock">in stock</span></p>
           </div>
         </div>
-        <button className=" btn btn-outline-light btn-sm buy" onClick = {() => props.onBuyPart(props.id)}>Buy</button>
-        <hr/>
+        <button className="float-right btn btn-outline-light btn-sm buy" onClick = {() => props.onBuyPart(props.id)}>Buy</button>
+        <br/>
+        <hr />
 
     </React.Fragment>
   );

@@ -113,7 +113,8 @@ class BodyTypeControl extends React.Component {
       }
         if (!match) {
           const cloneOldPart = {...oldPart};
-          cloneOldPart.partQuantity = oldPart.cartTotal
+          cloneOldPart.partQuantity = oldPart.cartTotal;
+          cloneOldPart.cartTotal = 1;
           clone[i].selection.push(cloneOldPart)
           break;
         }
@@ -128,7 +129,7 @@ class BodyTypeControl extends React.Component {
   }
 
   handleEditClick = () => {
-    console.log("handleEditClick reached!");
+
     this.setState({editing: true});
   }
 

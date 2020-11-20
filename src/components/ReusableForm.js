@@ -22,8 +22,13 @@ function NewPartForm(props) {
           type="number"
           name='partQuantity'
           placeholder='Quantity' /><br/>
+        <input
+        className="form-control"
+        type='number'
+        name='partPrice'
+        placeholder='Price'/><br/>
           
-        <select className="form-control" name='partBodyType'>
+        <select className="form-control" name='partBodyType' placeholder='Modification Type'>
           <option value="0">Vision and Auditory</option>
           <option value="1">Torso and Center Mass</option>
           <option value="2">Arms or Upper Appendages</option>
@@ -32,7 +37,7 @@ function NewPartForm(props) {
           <option value="5">External Instruments</option>
         </select><br/>
 
-        <button className="btn btn-outline-danger btn-block" type='submit'>{props.buttonText}</button>
+        <button className="btn btn-outline-light btn-block" type='submit'>{props.buttonText}</button>
         </div>
       </form>
 

@@ -23,7 +23,7 @@ hr {
 }
 
 .detailClick{
-  border: solid 1px transparent;
+  border: solid 2px transparent;
   margin-top: 5px;
   margin-bottom: 10px;
 }
@@ -31,8 +31,7 @@ hr {
 .detailClick:hover{
   transition-duration: .4s;
   cursor:pointer;
-  /* border-bottom: solid 1px #a9a9a9; */
-  border-right: solid 1px #a9a9a9;
+  border-right: solid 2px #5bc0debe;
 }
 
 .header{
@@ -62,8 +61,4 @@ h2 {
 
 #stock{
   color:#a9a9a9;
-}
-
-.buy {
-  margin-left:280px;
 }
