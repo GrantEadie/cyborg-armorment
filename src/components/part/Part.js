@@ -12,7 +12,7 @@ function Part(props){
             <p className="detailBar">{props.partQuantity} <span id="stock">in stock</span></p>
           </div>
         </div>
-        <button className="float-right btn btn-outline-light btn-sm buy" onClick = {() => props.onBuyPart(props.id)}>Buy</button>
+        <button className="float-right btn btn-outline-light btn-sm buy" onClick = {() => props.onBuyPart(props.id)}>Add to Cart</button>
         <br/>
         <hr />
 
