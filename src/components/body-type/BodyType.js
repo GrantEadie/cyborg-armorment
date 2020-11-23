@@ -11,7 +11,7 @@ function BodyType(props){
   return(
     <React.Fragment>
       <h2>{props.bodyType}</h2>
-      <p><em>available parts</em></p>
+      <p style={{display: "inline"}}><em>available stock</em></p>
       <hr/>
       <ul style={ulStyle}>
         {props.selection.map((part) =>

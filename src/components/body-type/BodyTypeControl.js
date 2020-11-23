@@ -48,9 +48,11 @@ class BodyTypeControl extends React.Component {
     };
   }
 
-  handleBodyClick = (id) => {
+  handleBodyClick = (event) => {
+    const bodyTypeVisible = parseInt(event.currentTarget.id)
+    console.log(bodyTypeVisible);
     this.setState({
-      bodyTypeVisibleOnPage: id
+      bodyTypeVisibleOnPage: bodyTypeVisible
     })
   }
 

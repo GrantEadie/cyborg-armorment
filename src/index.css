@@ -1,3 +1,10 @@
+@keyframes example {
+  0%   {fill: #212121; stroke: #898989}
+  25%  {fill: #4e4e4e; stroke: #9f9f9f}
+  50%  {fill: rgb(130, 130, 130); stroke: #212121}
+  100% {fill: #212121; stroke: #898989}
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color:#212121;
@@ -89,6 +96,9 @@ h2 {
   width:75%;
   float:right;
   margin-right:50px;
+  animation-name: example;
+  animation-duration:30s;
+  animation-iteration-count: infinite;
 }
 
 .visionAudio:hover {
