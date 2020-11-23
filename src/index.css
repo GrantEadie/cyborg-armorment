@@ -93,28 +93,28 @@ h2 {
 
 .visionAudio:hover {
   fill: #5bc0debe;
-  stroke: #5bc0debe;
+  stroke: none;
   transition-duration:0.2s;
   cursor:pointer;
 }
 
 .torso:hover {
   fill: #5bc0debe;
-  stroke: #5bc0debe;
+  stroke: none;
   transition-duration:0.2s;
   cursor:pointer;
 }
 
 .hands:hover {
   fill: #5bc0debe;
-  stroke: #5bc0debe;
+  stroke: none;
   transition-duration:0.2s;
   cursor:pointer;
 }
 
 .legs:hover{
   fill: #5bc0debe;
-  stroke: #5bc0debe;
+  stroke: none;
   transition-duration:0.2s;
   cursor:pointer;
 }
@@ -124,14 +124,14 @@ h2 {
 }
 
 .arms:hover{
-  stroke: #5bc0debe;
+  stroke: none;
   fill: #5bc0debe;
   transition-duration:0.2s;
   cursor:pointer;
 }
 
 .head:hover {
-  stroke: #5bc0debe;
+  stroke: none;
   fill: #5bc0debe;
   transition-duration:0.2s;
   cursor:pointer;

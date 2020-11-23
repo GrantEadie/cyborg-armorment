@@ -6,7 +6,6 @@ function Part(props){
     <React.Fragment>
       <div className="detailClick" onClick = {() => props.whenPartClicked(props.id)}>
         <p className="itemTitle">{props.partName}</p>
-        {/* <p>{props.partDescription}</p> */}
           <div >
             <p className="detailBar">{props.partPrice} ⅊ </p>
             <p className="detailBar">{props.partQuantity} <span id="stock">in stock</span></p>

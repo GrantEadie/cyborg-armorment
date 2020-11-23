@@ -48,6 +48,12 @@ class BodyTypeControl extends React.Component {
     };
   }
 
+  handleBodyClick = (id) => {
+    this.setState({
+      bodyTypeVisibleOnPage: id
+    })
+  }
+
   handleBuyClick = (id) => {    
     const currentCatIndex = this.state.bodyTypeVisibleOnPage;
     const clone = [...this.state.masterPartList]
@@ -251,7 +257,7 @@ class BodyTypeControl extends React.Component {
         {currentVisibleState}
           </div>
           <div className="col-md-4">
-            <BodyTypeSVG/>
+            <BodyTypeSVG onBodyClick={this.handleBodyClick} currentIndex={this.state.bodyTypeVisibleOnPage} />
           </div>
         </div>
         <div className="row">
