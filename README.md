@@ -6,7 +6,7 @@
     <!-- Project Avatar/Logo -->
     <br>
     <a>
-        <img src="/components/img/endymion.png">
+        <img src="/src/img/endymion.png">
     </a>
     <p align="center">
       ___________________________
