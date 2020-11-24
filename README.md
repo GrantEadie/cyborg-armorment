@@ -27,11 +27,11 @@
 
 # <u>Table of Contents</u>
 
-  - <a href="#-Description">Description</a>
-  - <a href="#-Known-Bugs">Known Bugs</a>
-  - <a href="#-Built-With">Built With</a>
-  - <a href="#-getting-started">Getting Started</a>
-  - <a href="#-setup-and-use">Setup and Use</a>
+  - <a href="#Description">Description</a>
+  - <a href="#Known-Bugs">Known Bugs</a>
+  - <a href="#Built-With">Built With</a>
+  - <a href="#getting-started">Getting Started</a>
+  - <a href="#setup-and-use">Setup and Use</a>
   - <a href="#contact-and-support">Contact</a>
   - <a href="#license">License</a>
 
