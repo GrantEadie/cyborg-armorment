@@ -71,7 +71,7 @@ To view or edit the code, you will need an code editor or text editor. The popul
 # Setup and Use
 
 1. Download or clone the respository to your machine.
-2. Open the main directory and put **npm build** in the terminal
+2. Open the main directory and write ``` npm build ``` in the terminal and hit enter
 3. Follow up with **npm start** and open http://localhost:3000/
 
 ---
