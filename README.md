@@ -35,41 +35,25 @@
   - <a href="#contact-and-support">Contact</a>
   - <a href="#license">License</a>
 
+![component drawing](src/img/cyborg-armorments.png)
 
 ---
 
-# 📖 Description
+# Description
 
-Use this really sweet little API to log the reserves, states, and their subsequent pairs in a SQL database. Simply GET and POST to this API to transfer information. Authorization is held in a Bearer Key - more details below! 
+Welcome to Endymion Outfitters, synthetic armaments and bio-modification. Our retailer provides solutions for advanced prosthetics. Click through the catagories, which are displayed on the model to the right, and choose an item to either put into the cart, or see more details. 
 
-# 🦠 Known Bugs
+# Known Bugs
 
-- Join table can be tricky at times. 
+- Model SVG has spaces in between the muscles and can make the hover function a little annoying.
 
-# 🛠 Built With
+# Built With
 
 - [Visual Studio Code](https://code.visualstudio.com/)
-- [C#](https://docs.microsoft.com/en-us/dotnet/csharp/)
-- [ASP.NET Core MVC](https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-3.1)
-- [MySQL](https://dev.mysql.com/)
-- [Entity Framework Core 2.2.6](https://docs.microsoft.com/en-us/ef/core/)
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Boostrap](https://getbootstrap.com/)
 
 # Getting Started
-
-## Install .NET Core
-
-- On macOS Mojave or later
-  - [Click here](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.106-macos-x64-installer) to download the .NET Core SDK from Microsoft Corp for macOS.
-- On Windows 10 x64 or later
-  - [Click here](https://dotnet.microsoft.com/download/thank-you/dotnet-sdk-2.2.203-windows-x64-installer) to download the 64-bit .NET Core SDK from Microsoft Corp for Windows.
-
-## Install dotnet script
-
-Enter the command `dotnet tool install -g dotnet-script` in Terminal for macOS or PowerShell for Windows.
-
-## Install MySQL Workbench
-
-[Download and install the appropriate version of MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
 
 ## Code Editor
 
@@ -84,96 +68,11 @@ To view or edit the code, you will need an code editor or text editor. The popul
 
 <hr>
 
-## Database Settings
-
-1. Create a new file in the NationalParks directory named `appsettings.json`
-2. Add in the following code snippet to the new appsettings.json file:
-
-```
-{
-  "Logging": {
-      "LogLevel": {
-      "Default": "Warning"
-      }
-  },
-  "AllowedHosts": "*",
-  "ConnectionStrings": {
-      "DefaultConnection": "Server=localhost;Port=3306;database=national_parks0;uid=root;pwd=YourPassword;"
-  }
-}
-```
-
-3. Change the server, port, and user id as necessary. Replace 'YourPassword' with relevant MySQL password (set at installation of MySQL).
-
 # Setup and Use
 
-- copy the repository URL and paste it after this GIT command `git clone {repository url}`
-- after opening the repository in your code reader, run `dotnet build`
-- once build is complete and no errors are thrown, run `dotnet watch run` in the terminal
-- in [Postman](https://www.postman.com/), paste this in the "request" line `http://localhost:4000/users/authenticate`
-- change the request action to POST and copy this text into the body 
-
-  ```
-  {
-    "username":"test",
-    "password":"test"
-  }
-  ```
-- copy the Bearer Token received in the body of the return and paste into your client
-- POST or GET to `http://localhost:4000/api/reserves` or `http://localhost:4000/api/states`
-
-# POSTING 
-
-- in [Postman](https://www.postman.com/) or other client, paste your Bearer Token into a header
-- paste this url into the request line -- http://localhost/api/{reserves OR states}
-- to POST in RESERVES, paste this syntax into the body of your POST 
-
-```
-{
-  "reserveName": "{the name of the reserve you are posting}"
-  "states": "{states they currently reside in.}"
-}
-```
-- for STATES
-```
-{
-  "stateName": "{the name of the state you are posting}"
-  "reserves": "{reserves currently in this state}"
-}
-```
-
-# GETTING
-- in [Postman](https://www.postman.com/) or other client, paste your Bearer Token into a header
-- paste this url into the request line -- http://localhost/api/{reserves OR states}
-- send request and reap the benefits of this incredible API!
-
-# UPDATING 
-- in [Postman](https://www.postman.com/) or other client, paste your Bearer Token into a header
-- paste this url into the request line -- http://localhost/api/{reserves OR states}
-- set request type to POST, copy the id of the state or reserve you would like to update
-- set request type to PUT, and change the url line to http://localhost/api/{reserves OR states}/{id}
-- in the body use this syntax 
-
-```
-{
-  "{state/reserve}Name": {update here},
-  "{states/reserves}": {update here}
-}
-```
-- send request
-
-# DELETE
-- in [Postman](https://www.postman.com/) or other client, paste your Bearer Token into a header
-- paste this url into the request line -- http://localhost/api/{reserves OR states}
-- set request type to POST, copy the id of the state or reserve you would like to update
-- set request type to DELETE, and change the url line to http://localhost/api/{reserves OR states}/{id}
-
-
-## Database
-
-1. Navigate to the NationalParksApi directory using the MacOS Terminal or Windows Powershell
-2. Run the command `dotnet ef database update` to generate the database through Entity Framework Core.
-3. (Optional) To update the database with any changes to the code, run the command `dotnet ef migrations add <MigrationsName>` which will use Entity Framework Core's code-first principle to generate a database update. After, run the previous command `dotnet ef database update` to update the database.
+1. Download or clone the respository to your machine.
+2. Open the main directory and put **npm build** in the terminal
+3. Follow up with **npm start** and open http://localhost:3000/
 
 ---
 
@@ -212,5 +111,3 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ```
-
-![component drawing](src/img/cyborg-armorments.png)
