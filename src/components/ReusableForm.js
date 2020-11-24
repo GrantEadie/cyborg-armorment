@@ -12,7 +12,7 @@ function NewPartForm(props) {
           type='text'
           name='partName'
           placeholder='Part Name' /><br/>
-        <input
+        <textarea
         className="form-control"
           type='text'
           name='partDesc'

@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from "prop-types";
-import BodyType from "./BodyType";
 
 function fillTypeHands(index){
   if (index === 5){

@@ -7,7 +7,8 @@ function App(){
   return ( 
     <React.Fragment>
       <Header />
-      <BodyTypeControl />      
+      <BodyTypeControl />
+      <Footer />      
     </React.Fragment>
   );
 }

@@ -25,6 +25,7 @@ function CartList(props) {
           id={part.id}
           onDeleteCartPart={props.onDeleteCartPart}/>
       )}
+      <button className="btn btn-outline-light btn-sm float-right">Checkout</button>
     </React.Fragment>
   );
 }
