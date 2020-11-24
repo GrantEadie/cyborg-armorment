@@ -5,8 +5,8 @@ function Footer() {
   return (    
     <React.Fragment>
       <br/><br/>
-      <div className="footer container">
-      <h4>created by Grant Eadie・inspiration from Ursula Le Guin and Anne Leckie</h4>
+      <div className="footer">
+      <p>created with love by <a href="https://granteadie.com">Grant Eadie</a>・inspiration from Ursula Le Guin, Anne Leckie, and Dan Simmons</p>
       </div>
     </React.Fragment>
   );
