@@ -5,21 +5,21 @@ import React from "react";
 function Header() {
   return (
     <React.Fragment>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
-        <a id="navTitle" class="navbar-brand" href="#">E | O </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+      <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <a id="navTitle" className="navbar-brand" href="#">E | O </a>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse justify-content-center navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active mr-2">
-              <a class="nav-link">Home <span class="sr-only">(current)</span></a>
+        <div className="collapse justify-content-center navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item active mr-2">
+              <a className="nav-link">Home <span className="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item mr-2">
-              <a class="nav-link">About</a>
+            <li className="nav-item mr-2">
+              <a className="nav-link">About</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link">Support</a>
+            <li className="nav-item">
+              <a className="nav-link">Support</a>
             </li>
           </ul>
         </div>

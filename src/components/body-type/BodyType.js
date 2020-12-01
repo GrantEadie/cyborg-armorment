@@ -23,7 +23,7 @@ function BodyType(props){
         partQuantity={part.partQuantity}  
         partPrice={part.partPrice}           
         id={part.id}
-        key={part.id}/>
+        key={part.key}/>
         </li>
         )}
       </ul>
@@ -37,6 +37,8 @@ BodyType.propTypes = {
   selection: PropTypes.array,
   onPartSelection: PropTypes.func,
   onBuyPart: PropTypes.func,
-  whenPartClicked: PropTypes.func
+  whenPartClicked: PropTypes.func,
+  key: PropTypes.number,
+  id: PropTypes.number
 };
 export default BodyType;
