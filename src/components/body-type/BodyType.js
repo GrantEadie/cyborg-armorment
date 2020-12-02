@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Part from "../part/Part";
+import { v4 } from 'uuid';
 
 function BodyType(props){
 
@@ -15,7 +16,7 @@ function BodyType(props){
       <hr/>
       <ul style={ulStyle}>
         {props.selection.map((part) =>
-        <li><Part
+        <li key={v4()} ><Part
         onBuyPart={props.onBuyPart}
         whenPartClicked = {props.onPartSelection}
         partName={part.partName}
